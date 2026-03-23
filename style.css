@@ -8,15 +8,17 @@ html{
     font-family:Segoe UI;
     }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 .navbar{
 display:flex;
 align-items:center;
 justify-content:space-between;
-box-sizing:border-box;
+
 height:65px;
 padding:0 8%;
+
+box-sizing:border-box;
 
 position:fixed;
 top:0;
@@ -36,7 +38,8 @@ background:#020617;
 box-shadow:0 4px 15px rgba(0,0,0,.5);
 }
 
-/* LOGO */
+
+/* ================= LOGO ================= */
 
 .logo{
 font-size:22px;
@@ -44,7 +47,8 @@ font-weight:600;
 color:#a855f7;
 }
 
-/* NAV LINKS */
+
+/* ================= NAV LINKS ================= */
 
 .nav-links{
 display:flex;
@@ -59,6 +63,7 @@ text-decoration:none;
 color:white;
 font-size:15px;
 }
+
 
 /* underline animation */
 
@@ -87,7 +92,8 @@ width:100%;
 color:#a855f7;
 }
 
-/* RESUME BUTTON */
+
+/* ================= RESUME BUTTON ================= */
 
 .resume-btn{
 
@@ -102,13 +108,16 @@ text-decoration:none;
 
 color:white;
 
+transition:.3s;
+
 }
 
 .resume-btn:hover{
 background:#9333ea;
 }
 
-/* MENU ICON */
+
+/* ================= MENU ICON ================= */
 
 .menu-toggle{
 display:none;
@@ -117,7 +126,8 @@ cursor:pointer;
 color:white;
 }
 
-/* MOBILE RESPONSIVE */
+
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
@@ -134,6 +144,7 @@ top:65px;
 left:0;
 
 width:100%;
+
 background:#020617;
 
 flex-direction:column;
@@ -146,14 +157,23 @@ padding:20px 0;
 max-height:0;
 overflow:hidden;
 
-transition:.4s ease;
+transition:max-height .4s ease;
 
 }
+
+/* open menu */
 
 .nav-links.active{
 max-height:500px;
 }
 
+}
+
+
+/* ================= SECTION OFFSET FIX ================= */
+
+section{
+scroll-margin-top:90px;
 }
     .hero{
     height:100vh;
